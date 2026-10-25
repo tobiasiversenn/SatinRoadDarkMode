@@ -17,16 +17,16 @@ export function AddStolenArtifact(){
         <div className="AddPageDiv">
 
         <>
-            <h1>Add a stolen artifact</h1>
-            <hr/>
             <br/>
-            <label>Stolen artifact name</label>
+            <h1 className="AlignTextToLeft">Add a stolen artifact</h1>
+            <label className="AlignTextToLeft" >Fill in the information below to add a new stolen artifact to the marketplace</label>
+            
             <br/>
+            <label className="AlignTextToLeft">Stolen artifact name</label>
             <input className="inputFieldOnAddPage" value={stolenArtifactName} onChange={(e)=> setStolenArtifactName(e.target.value)}/>
             <br/>
             <br/>
-            <label>Price</label>
-            <br/>
+            <label className="AlignTextToLeft">Price</label>
             <input className="inputFieldOnAddPage" value={stolenArtifactPrice} onChange={e => setStolenArtifactPrice(e.target.value)}/>
             <br/>
             <br/>

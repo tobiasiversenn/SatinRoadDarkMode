@@ -18,16 +18,16 @@ export function AddWeaponry(){
         
         <div className="AddPageDiv">
         <>
-            <h1>Add a weaponry</h1>
-            <hr/>
             <br/>
-            <label>Weaponry name</label>
+            <h1 className="AlignTextToLeft">Add a weaponry</h1>
+            <label className="AlignTextToLeft" >Fill in the information below to add a new weaponry to the marketplace</label>
+
             <br/>
+            <label className="AlignTextToLeft">Weaponry name</label>
             <input className="inputFieldOnAddPage" value={weaponryName} onChange={(e)=> setWeaponryName(e.target.value)}/>
             <br/>
             <br/>
-            <label>Price</label>
-            <br/>
+            <label className="AlignTextToLeft">Price</label>
             <input className="inputFieldOnAddPage" value={weaponryPrice} onChange={e => setWeaponryPrice(e.target.value)}/>
             <br/>
             <br/>

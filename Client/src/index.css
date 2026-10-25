@@ -1,33 +1,73 @@
+body {
+    font-family: "Arial, sans-serif";
+    background-color: #171717;
+    color: #BDBDBD;
+
+}
+
+
+
+
 .NavigationBar {
+    display: block;
     width: 160px;
-    height: 400px;
-    background-color: #1e1e1e;
-    
+    height: 600px;
+    background: #262626;
+
     flex-shrink: 0;
 }
+
+.ButtonNavigationBar {
+
+    width: 100%;
+    padding-left: 20px;
+    text-align: left;
+    background-color: #262626;
+    color: grey;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.ButtonNavigationBar:hover {
+    border-color: #00B783;
+    
+
+}
+
+.HeadingNavigationBar {
+    padding-left: 20px;
+    margin-bottom: 1px;
+
+}
+
 
 .PageLayout {
     display: flex;
     gap: 40px;
-    
 }
 
+.ContentRightToNavigationBar {
+    flex: 1;
+}
 
 .Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%
-
+    width: 100%;
 }
 
 .WebsiteNameText {
     margin: 0;
+    color: #F5F5F5;
 }
 
 
 .LoggedInText {
     margin: 0;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 
@@ -41,7 +81,7 @@
     border-radius: 12px;
     width: 120px;
     height: 30px;
-    border: 1px solid #d1d5db;
+    border: 1px solid #383838;
 
 }
 
@@ -53,72 +93,79 @@
     border-radius: 12px;
     width: 120px;
     height: 30px;
-    border: 1px solid #d1d5db;
-
+    border: 1px solid #383838;
 }
 
 .btnAddCategory:hover {
     background-color: #005900;
 }
 
-.InputFieldAddCategory {
-    width: 120px;
-    height: 20px;
-    border-radius: 12px;
-    border: 1px solid #d1d5db;
+
+
+.InputFieldAddCategory:hover {
+    border-color: #00B783;
+}
+
+.InputFieldAddCategory:focus {
+    outline: none;
+    border-color: #00B783;
 
 }
 
-.ButtonNavigationBar {
-    width: 100%;
-    background-color: #1e1e1e;
-    color: white;
-    height: 60px;
-}
 
-.ButtonNavigationBar:hover {
-    background-color: grey;
-}
 
 
 .AddPageDiv {
-    background-color: whitesmoke;
-    width: 350px;
-    height: 350px;
+    background-color: #262626;
+    width: 450px;
+    height: 400px;
     text-align: center;
     border-radius: 12px;
     margin-left: 280px;
     margin-top: 60px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #383838;
+
 }
 
-.InputFieldToAddPages {
-    
-    
+.AddPageCategoryDiv {
+    background-color: #262626;
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: 280px;
+    margin-top: 60px;
+    border: 2px solid #383838;
+
 }
+
 .btnAdd {
     border-radius: 10px;
-    width: 100px;
-    height: 50px;
-    background-color: dodgerblue;
+    width: 85%;
+    height: 40px;
+    background-color: #00B783;
     border: 1px solid #d1d5db;
-
 }
 
 .btnAdd:hover {
-    background-color: #0072E3;
+    background-color: #00B783;
+    
 }
 
 .Products {
-    background-color: whitesmoke;
+    background-color: #262626;
     width: 190px;
     border-radius: 10px;
     text-align: center;
 
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: #383838;
     
+}
+
+.Products:hover {
+    border-color: #00B783;
 }
 
 .ProductsContainer {
@@ -126,53 +173,87 @@
     gap: 20px;
     flex-wrap: wrap;
     
+    
 }
 
 .inputFieldOnAddPage {
-    width: 50%;
+    width: 85%;
+    height: 28px;
     border-radius: 10px;
-    border: 1px solid #d1d5db;
+    border: 1px solid #383838;
+    background-color: #1E2021;
+    color: whitesmoke;
+}
 
+.inputFieldOnAddPage:hover {
+    border-color: #00B783;
+}
+
+.inputFieldOnAddPage:focus {
+    outline: none;
+    border-color: #00B783;
 }
 
 .LoginPage {
     width: 450px;
     height: 400px;
-    background-color: whitesmoke;
+    background-color: #262626;
     text-align: center;
     margin-left: 400px;
     margin-top: 100px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
+}
 
+.TextLoginPage {
+    text-align: left;
+    display: block;
+    width: 60%;
+    margin: 0 auto 5px auto;
+}
+
+.TextAddPage{
+
+    text-align: left;
+}
     .InputFieldLoginPage {
-        width: 40%;
+        width: 85%;
         border-radius: 30px;
-        height: 25px;
-        border: 1px solid #d1d5db;
-        
+        height: 28px;
+        border: 1px solid #383838;
+        background-color: #171717;
+        color: whitesmoke;
     }
     
-    .ButtonLoginPage {
-        width: 40%;
-        background-color: dodgerblue;
+    .InputFieldLoginPage:hover {
+        border-color: #00B783;
+    }
+
+.InputFieldLoginPage:focus {
+    outline: none;
+    border-color: #00B783;
+}
+
+
+
+.ButtonLoginPage {
+        width: 85%;
+        background-color: #00B783;
         border-radius: 30px;
-        height: 30px;
+        height: 35px;
         border: 1px solid #d1d5db;
         
     }
     .ButtonLoginPage:hover {
-        background-color: #0072E3;
+        background-color: #00B783;
     }
+    
 
-    
-   
-    
-    
-    body {
-        font-family: "Arial, sans-serif";
+    .AlignTextToLeft {
+        text-align: left;
+        display: block;
+        width: 85%;
+        margin: 0 auto 5px auto;
+        
     }
-
-    
-}
 

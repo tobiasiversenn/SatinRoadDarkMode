@@ -13,19 +13,17 @@ export function Loginpage(){
     <>
         <div className="LoginPage">
             <br/>
-            <h2>Login</h2>
+            <h1 className="AlignTextToLeft">Login</h1>
+            <label className="AlignTextToLeft" >Log in with your credentials to access Satin Road</label>
+
             <br/>
-            <label>Username:</label>
-            <br/>
+            <label className="AlignTextToLeft">Username</label>
         <input className="InputFieldLoginPage" value={username} onChange={(e) => setUsername(e.target.value)}/>
         <br/>
             <br/>
-            <br/>
-            <label>Password</label>
-            <br/>
+            <label className="AlignTextToLeft">Password</label>
         <input className="InputFieldLoginPage" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
         <br/>
-            <br/>
             <br/>
             <br/>
 

@@ -17,16 +17,16 @@ export function AddDrug(){
         <div className="AddPageDiv">
 
         <>
-            <h1>Add a drug</h1>
-            <hr/>
             <br/>
-            <label>Drug name</label>
+            <h1 className="AlignTextToLeft">Add a drug</h1>
+            <label className="AlignTextToLeft" >Fill in the information below to add a new drug to the marketplace</label>
             <br/>
+            
+            <label className="AlignTextToLeft">Drug name</label>
             <input className="inputFieldOnAddPage" value={drugName} onChange={(e)=> setDrugName(e.target.value)}/>
             <br/>
             <br/>
-            <label>Price</label>
-            <br/>
+            <label className="AlignTextToLeft">Price</label>
             <input className="inputFieldOnAddPage" value={drugPrice} onChange={e => setDrugPrice(e.target.value)}/>
             <br/>
             <br/>

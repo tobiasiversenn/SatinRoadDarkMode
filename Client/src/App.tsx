@@ -11,7 +11,8 @@ import {Inventory} from "@/Inventory.tsx";
 import "./index.css"
 import {Loginpage} from "@/Loginpage.tsx";
 import {HomePage} from "@/HomePage.tsx";
-import {AdminPage} from "@/AdminPage.tsx";
+import {AddCategory} from "@/AddCategory.tsx";
+import {AllCategories} from "@/AllCategories.tsx";
 
 export function App() {
     return (
@@ -35,17 +36,13 @@ export function App() {
                      ) : (
 
                          <>
-                             <div className="Header">
-                                 <h1 className="WebsiteNameText"> Satin Road</h1>
-                                 <Link to="/login">
-                                     <h3 className="LoggedInText">James ▾</h3>
-                                 </Link>
-                             </div>
-                             <hr/>
+                             
+                             
                              <div className="PageLayout">
-
+                                 
                                  <div className="NavigationBar">
 
+                                     <p className="HeadingNavigationBar">MAIN</p>
                                      <Link to="/homepage">
                                          <button className="ButtonNavigationBar">Home page</button>
                                      </Link>
@@ -54,8 +51,8 @@ export function App() {
                                          <button className="ButtonNavigationBar">View my inventory</button>
                                      </Link>
 
-
-                                     <nav>
+                                     
+                                         <p className="HeadingNavigationBar">MARKET</p>
                                          <Link to="/drugs">
                                              <button className="ButtonNavigationBar">Drugs</button>
                                          </Link>
@@ -69,9 +66,9 @@ export function App() {
                                              <button className="ButtonNavigationBar">Weaponry</button>
                                          </Link>
 
-                                     </nav>
-
-
+                                     
+                                     
+                                     <p className="HeadingNavigationBar">SELL</p>
                                      <Link to="/adddrug">
                                          <button className="ButtonNavigationBar">Add a Drug</button>
                                      </Link>
@@ -81,14 +78,26 @@ export function App() {
                                      <Link to="/addweaponry">
                                          <button className="ButtonNavigationBar">Add a Weaponry</button>
                                      </Link>
-                                     <Link to="adminpage">
-                                         <button className="ButtonNavigationBar">Admin Page</button>
+                                     
+                                     <p className="HeadingNavigationBar">ADMIN</p>
+                                     <Link to="/allcategories">
+                                         <button className="ButtonNavigationBar">All categories</button>
+                                     </Link>
+                                     <Link to="/addcategory">
+                                         <button className="ButtonNavigationBar">Add category</button>
                                      </Link>
 
                                  </div>
+                                 
 
                                  <div className="ContentRightToNavigationBar">
 
+                                     <div className="Header">
+                                         <h1 className="WebsiteNameText"> Satin Road</h1>
+                                         <Link className="LoggedInText" to="/login">
+                                             <h3 className="LoggedInText">James ▾</h3>
+                                         </Link>
+                                     </div>
                                      <Routes>
                                          <Route path="/" element={<Loginpage/>}/>
                                          <Route path="/homepage" element={<HomePage/>}/>
@@ -100,7 +109,8 @@ export function App() {
                                          <Route path="/drugs" element={<Drugs/>}/>
                                          <Route path="/stolenartifacts" element={<StolenArtifacts/>}/>
                                          <Route path="/weaponry" element={<Weaponry/>}/>
-                                         <Route path="/adminpage" element={<AdminPage/>}/>
+                                         <Route path="/allcategories" element={<AllCategories/>}/>
+                                         <Route path="/addcategory" element={<AddCategory/>}/>
 
 
                                      </Routes>
@@ -109,6 +119,7 @@ export function App() {
                                  </div>
 
                              </div>
+                             
 
 
                          </>
